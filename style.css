@@ -13,12 +13,6 @@ body {
     width: 90%;
 }
 
-.container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 90%;
-}
 .background-box {
     background-color: hsl(235, 18%, 26%);
     width: 70%;
@@ -27,7 +21,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 42px;
+}
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    display: flex;
+    gap: 2rem;
+}
+.image-box img {
+width: 100%;
+max-width:300px;
+height: auto;
+}
+@media (max-width: 900px){
+ .image-box img {
+ content: url("images/illustration-sign-up-tablet.svg")
+ }   
+}
+@media (max-width: 600px){ 
+ .image-box img {
+ content: url("images/illustration-sign-up-mobile.svg")
+ }   
+}
+.features {
+   list-style: none;
+   padding: 0;
+margin: 1.5rem 0;
+}
+.features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.features li img { 
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
 }
 
 h1 {
