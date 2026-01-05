@@ -33,20 +33,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
 }
 .container {
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 12px;
-    width: 90%;
+    width: 950%;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    max-width: 750px;
 }
 .image-box img {
 width: 100%;
-max-width:300px;
 height: auto;
+border-radius: 10px;
+object-fit: cover;
+flex: 1;
+margin: -0.5rem;
+margin-left: 0.5rem;
 }
 @media (max-width: 900px){
  .image-box img {
@@ -85,4 +90,43 @@ p {
     color:hsl(235, 18%, 26%);
     font-size: 16px;
     font-weight: 400, 700;
+}
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+input[type="email"] {
+    padding: 0.7rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+    font-size: 11px;
+    font-family: inherit;
+    outline: none;
+    margin-bottom: 9px;
+}
+
+button{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 0.69rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: hsl(4, 100%, 67%);
+    color:hsl(234, 29%, 20%);
+    box-shadow: 0 10px 20px rgba(255, 98, 87, 0.4);
+}
+label {
+    font-size: 0.69rem;
+    font-weight: 600;
+    color:hsl(234, 29%, 20%);
+    margin: 0;
 }
