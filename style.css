@@ -130,3 +130,6 @@ label {
     color:hsl(234, 29%, 20%);
     margin: 0;
 }
+.hidden {
+    display: none;
+}
