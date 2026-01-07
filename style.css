@@ -116,13 +116,10 @@ button{
     font-size: 0.69rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 button:hover {
-    background: hsl(4, 100%, 67%);
-    color:hsl(234, 29%, 20%);
-    box-shadow: 0 10px 20px rgba(255, 98, 87, 0.4);
+    background: hsl(4, 100%, 67%)
 }
 label {
     font-size: 0.69rem;
@@ -130,6 +127,41 @@ label {
     color:hsl(234, 29%, 20%);
     margin: 0;
 }
+
+
 .hidden {
     display: none;
+    background-color: hwb(235 21% 69%);
+}
+.success-card {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 16px;
+}
+.success-card img {
+    width: 30px;
+    margin-bottom: 12px;
+}
+.success-card h1 {
+    margin-bottom: 10px;
+    color:hsl(234, 29%, 20%);
+}
+.success-card p {
+    font-size: 14px;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+dismiss-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(234, 29%, 20%); 
+}
+dismiss-button :hover {
+background-color: hsl(4, 100%, 67%);
 }

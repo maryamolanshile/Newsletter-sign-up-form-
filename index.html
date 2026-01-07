@@ -26,22 +26,14 @@ Join 60,000+ product managers receiving monthly updates on: </p>
    <label for="email">Email address</label>
      <input
        type="email"
-       id="email"
+       id="email-input"
        placeholder="email@company.com"
-       />
+       required/>
     
-    <button type="submit">
+    <button type="submit" id="submit-button">
        Subscribe to monthly newsletter 
     </button>
   </form>
-
-  <div id="success-message"
-    class="hidden">
-    <P>
-      Email address email@company.com Subscribe to monthly newsletter Thanks for subscribing! A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription. Dismiss message
-    </P>
-
-  </div>
 </div>
 <div class="image-box">
 <img src="images/illustration-sign-up-desktop.svg" alt="Newsletter illustration">
@@ -49,9 +41,19 @@ Join 60,000+ product managers receiving monthly updates on: </p>
 </div>
 </div>
       </div>
+
+
+      <div id="success-message"
+    class="hidden">
+    <div class=" sucess-card">
+      <img src="images/icon-success.svg" alt="Sucess icon">
+      <h1>Thanks for subscribing!</h1> 
+      <p> A confirmation email has been sent to <b id="user-email"></b>. Please open it and click the button inside to confirm your subscription. 
+      </p>
+        <button class="dismiss-btn">Dismiss message</button>
+  </div>
+  </div>
  <script src="script.js"></script>
     </body>
 </html>
-
-
 
