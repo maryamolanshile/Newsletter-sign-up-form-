@@ -4,7 +4,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-body {
+.newsletter-body {
     background-color: hsl(4, 100%, 67%);
     font-family: Roboto, Arial, sans-serif;
     height: 100%;
@@ -130,8 +130,8 @@ label {
 
 
 .hidden {
-    display: none;
-    background-color: hwb(235 21% 69%);
+    display: block;
+    background-color: hsl(235, 18%, 26%);
 }
 .success-card {
     background-color: white;
@@ -165,3 +165,16 @@ dismiss-button {
 dismiss-button :hover {
 background-color: hsl(4, 100%, 67%);
 }
+
+#user-email {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.success-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   font-family: Roboto, Arial, sans-serif;
+ }

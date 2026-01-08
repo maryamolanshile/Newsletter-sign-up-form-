@@ -3,9 +3,13 @@
     <head>
         <title>Newsletter Signup-UI</title>
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="Newsletter signup page for my coding challenge project.">
+
     <link rel="stylesheet" href="style.css"> 
     </head>
-    <body>
+    <body class="newsletter-body">
       <div class="page-frame">
        <div class="background-box">
     
@@ -22,7 +26,7 @@ Join 60,000+ product managers receiving monthly updates on: </p>
  <li> <img src="images/icon-list.svg" alt="list icon">
      And much more!</li>
 </ul>
-<form class="email-form" id="newsletter-signup">
+<form class="email-form" id="newsletter-signup-form">
    <label for="email">Email address</label>
      <input
        type="email"
@@ -42,18 +46,8 @@ Join 60,000+ product managers receiving monthly updates on: </p>
 </div>
       </div>
 
+<script src="script.js"></script>
 
-      <div id="success-message"
-    class="hidden">
-    <div class=" sucess-card">
-      <img src="images/icon-success.svg" alt="Sucess icon">
-      <h1>Thanks for subscribing!</h1> 
-      <p> A confirmation email has been sent to <b id="user-email"></b>. Please open it and click the button inside to confirm your subscription. 
-      </p>
-        <button class="dismiss-btn">Dismiss message</button>
-  </div>
-  </div>
- <script src="script.js"></script>
     </body>
 </html>
 
