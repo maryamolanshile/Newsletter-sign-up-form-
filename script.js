@@ -1,4 +1,4 @@
- const form = document.getElementById("newsletter-signup-form");
+ const  form = document.getElementById("newsletter-signup-form");
  const emailInput = document.getElementById("email-input");
  const submitBtn = document.getElementById("submit-button");
  const userEmail = document.getElementById("user-email");
@@ -9,6 +9,18 @@
  submitBtn.addEventListener("click", 
     function (event) {
         event.preventDefault()
+        userEmail.textContent = emailInput.value;
 form.style.display = "none"
 sucessMessage.style.display = "block"
     })
+
+    if(document.getElementById("submit-button"))
+    {
+        const submitBtn = document.getElementById("submit-button");
+        const emailInput = document.getElementById("email-input"); 
+
+         submitBtn.addEventListener("click", 
+    function (event) {
+        event.preventDefault();
+        })
+    } 
