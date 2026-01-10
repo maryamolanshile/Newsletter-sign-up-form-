@@ -19,10 +19,9 @@ box-sizing: border-box;
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 0%;
+    padding: 20px;
 }
 .page-frame{
-    padding: -3px;
     min-height: 100vh;
     box-sizing: border-box;
     display: flex;
